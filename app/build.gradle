@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.atease"
-        minSdk 30
+        minSdk 27
         targetSdk 30
         versionCode 1
         versionName "1.0"
@@ -21,6 +21,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+//        buildFeatures{
+//            viewbinding = enabled true
+//        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
