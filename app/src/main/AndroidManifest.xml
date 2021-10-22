@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/splashScreenTheme">
         <activity
-            android:name=".HomeActivity"
-            android:label="HomeActivity"/>
+            android:name=".UserProfile"
             android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="HomeActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
