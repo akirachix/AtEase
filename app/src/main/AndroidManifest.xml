@@ -11,7 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
-
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Onboarding3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Onboarding2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Onboarding1Activity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:label="HomeActivity" />
         <activity

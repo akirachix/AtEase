@@ -6,9 +6,11 @@
         <entry key="app/src/main/res/drawable/splash_image.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-
+        <entry key="app/src/main/res/layout/activity_onboarding1.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/activity_onboarding2.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_onboarding3.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.15" />
-        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.22" />feature
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.18" />
       </map>
     </option>
   </component>
