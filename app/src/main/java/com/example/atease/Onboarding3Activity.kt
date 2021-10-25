@@ -29,6 +29,8 @@ class Onboarding3Activity : AppCompatActivity() {
          }
 
         btnLogin.setOnClickListener {
+            val login=Intent(baseContext,LoginActivity::class.java)
+            startActivity(login)
 
         }
 
