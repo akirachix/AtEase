@@ -6,70 +6,60 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.example.atease.databinding.ActivityLoginBinding
+import com.example.atease.databinding.ActivitySignupBinding
 
 class SignupActivity : AppCompatActivity() {
-    lateinit var etName: EditText
-    lateinit var etEmail: EditText
-    lateinit var etPhoneNumber: EditText
-    lateinit var etPassword: EditText
-    lateinit var btnSignUp:Button
-
+    lateinit var binding: ActivitySignupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
-        castingViews()
-        onClickListener()
+        binding = ActivitySignupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        goNext()
     }
 
-
-    fun castingViews() {
-        etName = findViewById(R.id.etName)
-        etEmail = findViewById(R.id.etEmail)
-        etPhoneNumber = findViewById(R.id.etPhoneNumber)
-        etPassword = findViewById(R.id.etPassword)
-        btnSignUp = findViewById(R.id.btnSignUp)
-
-    }
-
-    fun onClickListener(){
-        if(etName.text.toString().isEmpty()||(etPassword.text.toString().isEmpty())||etEmail.text.toString().isEmpty()||(etPhoneNumber.text.toString().isEmpty())) {
-            etName.setError("Enter your Name")
-            etEmail.setError("Enter your Email")
-            etPassword.setError("Enter your Password")
-            etPhoneNumber.setError("Write your contact")
-
-            var btnSignUp = findViewById<Button>(R.id.btnSignUp)
-            btnSignUp.setOnClickListener {
-                var intent = Intent(baseContext, HomeActivity::class.java)
+    fun goNext() {
+        binding.btnSignUp.setOnClickListener {
+            if (binding.etPassword.text.toString().isEmpty() || (binding.etEmail.text.toString()
+                    .isEmpty() || (binding.etName.text.toString()
+                    .isEmpty() || binding.etPhoneNumber.text.toString().isEmpty()))
+            ) {
+                binding.etName.setError("Enter your Name")
+                binding.etEmail.setError("Enter your Email")
+                binding.etPhoneNumber.setError("Enter your PhoneNumber")
+                binding.etPassword.setError("Enter your Password")
+                val intent = Intent(baseContext, HomeScreenActivity::class.java)
                 startActivity(intent)
             }
-           }
+        }
+    }
+
 }
 
 //class Signup : AppCompatActivity() {
-//    lateinit var binding: ActivitySignupBinding
+//    lateinit var binding:SignupActivity
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //
 //        super.onCreate(savedInstanceState)
-//        binding = ActivitySignupBinding.inflate(layoutInflater)
+//        binding = SignupActivity().inflate(layoutInflater)
 //        setContentView(binding.root)
 //
 //        var firstname = binding.etFirstname.text.toString()
 //
 //        if (firstname.isEmpty()) {
-//            binding.etemail.setError("FirstName Required")
+//            binding.etEmail.setError("FirstName Required")
 //
 //        }
-//        var lastname = binding.etlastname.text.toString()
+//        var lastname = binding.etName.text.toString()
 //
 //        if (lastname.isEmpty()) {
-//            binding.etpassword.setError("LastName is required")
+//            binding.etPassword.setError("LastName is required")
 //        }
 //
-//        var password= binding.etpassword.text.toString()
+//        var password= binding.etPhoneNumber.text.toString()
 //
 //        if (password.isEmpty()) {
-//            binding.etpassword.setError("Password  is required")
+//            binding.etPassword.setError("Password  is required")
 //        }
 //        var confirmpassword= binding.etconfirmpassword.text.toString()
 //
@@ -86,6 +76,6 @@ class SignupActivity : AppCompatActivity() {
 //            var intent = Intent(baseContext, Signin ::class.java)
 //            startActivity(intent)
 //        }
+//
+//
 
-
-    }

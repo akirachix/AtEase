@@ -11,6 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
+            android:name=".ActivityAnxiety"
+            android:exported="true" />
+        <activity
+            android:name=".ActivitySleep"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityStress"
+            android:exported="true" />
+        <activity
+            android:name=".HomeScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".SignupActivity"
             android:exported="true" />
         <activity
@@ -22,9 +37,6 @@
         <activity
             android:name=".Onboarding1Activity"
             android:exported="true" />
-        <activity
-            android:name=".HomeActivity"
-            android:label="HomeActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
