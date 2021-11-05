@@ -3,9 +3,9 @@ package com.example.atease
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ActivitySleep : AppCompatActivity() {
+class Activity_onboarding : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sleep)
+        setContentView(R.layout.activity_onboarding)
     }
 }

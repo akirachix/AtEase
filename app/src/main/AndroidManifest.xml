@@ -11,34 +11,64 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
-            android:name=".ActivityAnxiety"
+            android:name=".Activity_onboarding"
             android:exported="true" />
         <activity
-            android:name=".ActivitySleep"
+            android:name=".ui.ActivityStartActivity"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".ui.ActivityResetPassword" -->
+        <!-- android:exported="true" /> -->
+        <activity
+            android:name=".ui.ActivityForgotPassword"
             android:exported="true" />
         <activity
-            android:name=".ActivityStress"
+            android:name=".ui.ActivityWallet"
             android:exported="true" />
         <activity
-            android:name=".HomeScreenActivity"
+            android:name=".ui.WellDoneActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.UserProfile"
             android:exported="true" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".ui.stressScreeningActivity2"
             android:exported="true" />
         <activity
-            android:name=".Onboarding3Activity"
+            android:name=".ui.choosingAssessmentActivity2"
             android:exported="true" />
         <activity
-            android:name=".Onboarding2Activity"
+            android:name=".ui.ActivityStartActivity"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".BreathActivity" -->
+        <!-- android:exported="true" /> -->
+        <activity
+            android:name=".ui.ActivityAnxiety"
             android:exported="true" />
         <activity
-            android:name=".Onboarding1Activity"
+            android:name=".ui.ActivitySleep"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".ActivityStress" -->
+        <!-- android:exported="true" /> -->
+        <activity
+            android:name=".ui.HomeScreenActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Onboarding3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Onboarding2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Onboarding1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

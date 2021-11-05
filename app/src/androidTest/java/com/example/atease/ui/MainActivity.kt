@@ -1,10 +1,10 @@
-package com.example.atease
+package com.example.atease.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.widget.TextView
+import com.example.atease.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         Handler().postDelayed({
 
-            val intent=Intent(this@MainActivity,Onboarding1Activity::class.java)
+            val intent=Intent(this@MainActivity, Onboarding1Activity::class.java)
 
             startActivity(intent)
             finish()

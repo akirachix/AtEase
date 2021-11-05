@@ -1,9 +1,10 @@
-package com.example.atease
+package com.example.atease.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.atease.R
 
 class Onboarding3Activity : AppCompatActivity() {
     lateinit var btnsignup:Button
@@ -24,12 +25,12 @@ class Onboarding3Activity : AppCompatActivity() {
 
     fun onClickNow(){
          btnsignup.setOnClickListener {
-             val signup=Intent(baseContext,SignupActivity::class.java)
+             val signup=Intent(baseContext, SignupActivity::class.java)
              startActivity(signup)
          }
 
         btnLogin.setOnClickListener {
-            val login=Intent(baseContext,LoginActivity::class.java)
+            val login=Intent(baseContext, LoginActivity::class.java)
             startActivity(login)
 
         }
