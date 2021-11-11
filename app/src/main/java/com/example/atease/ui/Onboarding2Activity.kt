@@ -1,27 +1,27 @@
-package com.example.atease
+package com.example.atease.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.atease.R
 
-class Onboarding1Activity : AppCompatActivity() {
+class Onboarding2Activity : AppCompatActivity() {
     lateinit var btnButton: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_onboarding1)
+        setContentView(R.layout.activity_onboarding2)
         castView()
         onClickNow()
-
     }
     fun castView(){
-        btnButton=findViewById<Button>(R.id.btnButton)
+        btnButton=findViewById(R.id.btnButton2)
     }
     fun onClickNow(){
         btnButton.setOnClickListener {
-            val next=Intent(baseContext,Onboarding2Activity::class.java)
+            val next=Intent(baseContext, Onboarding3Activity::class.java)
             startActivity(next)
-        }
 
+        }
     }
 }

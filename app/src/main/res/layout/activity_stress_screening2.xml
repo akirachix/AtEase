@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.stressScreeningActivity2">
+
+    <TextView
+        android:id="@+id/tvScreening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Stress Screening"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvquize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Do you worry alot of different things?"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvScreening" />
+
+    <Button
+        android:id="@+id/btnBarely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Barely"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvquize" />
+
+    <Button
+        android:id="@+id/btnSometimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="sometimes"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBarely"
+        app:layout_constraintEnd_toStartOf="@+id/btnOften"
+        app:layout_constraintStart_toEndOf="@+id/btnBarely"
+        app:layout_constraintTop_toTopOf="@+id/btnBarely" />
+
+    <Button
+        android:id="@+id/btnOften"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Often"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSometimes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSometimes" />
+
+    <Button
+        android:id="@+id/btnvery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Very Often"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBarely" />
+
+    <Button
+        android:id="@+id/btnNever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Never"
+        app:layout_constraintBottom_toBottomOf="@+id/btnvery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnvery"
+        app:layout_constraintTop_toTopOf="@+id/btnvery" />
+
+    <TextView
+        android:id="@+id/tvquize2"
+        android:layout_width="352dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Do you have troubles controlling your sleep?"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNever" />
+
+    <Button
+        android:id="@+id/btnrarely2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Rarely"
+        app:layout_constraintEnd_toStartOf="@+id/btnSometimes2"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvquize2" />
+
+    <Button
+        android:id="@+id/btnSometimes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Sometimes"
+        app:layout_constraintBottom_toBottomOf="@+id/btnrarely2"
+        app:layout_constraintEnd_toStartOf="@+id/btnoften2"
+        app:layout_constraintStart_toEndOf="@+id/btnrarely2"
+        app:layout_constraintTop_toTopOf="@+id/btnrarely2" />
+
+    <Button
+        android:id="@+id/btnoften2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Often"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSometimes2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSometimes2" />
+
+    <Button
+        android:id="@+id/btnnever2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#03A9F4"
+        android:text="very often"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnrarely2" />
+
+    <Button
+        android:id="@+id/btnvery2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:text="Never"
+        app:layout_constraintBottom_toBottomOf="@+id/btnnever2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@+id/btnnever2"
+        app:layout_constraintTop_toTopOf="@+id/btnnever2" />
+
+    <TextView
+        android:id="@+id/tvquize3"
+        android:layout_width="344dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:text="Do you have trouble controlling yours sleep?"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnvery2" />
+
+    <Button
+        android:id="@+id/btnsometimes3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="sometimes"
+        app:layout_constraintBottom_toBottomOf="@+id/btnrarely3"
+        app:layout_constraintEnd_toStartOf="@+id/btnoften3"
+        app:layout_constraintStart_toEndOf="@+id/btnrarely3"
+        app:layout_constraintTop_toTopOf="@+id/btnrarely3" />
+
+    <Button
+        android:id="@+id/btnrarely3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#03A9F4"
+        android:text="rarely"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvquize3" />
+
+    <Button
+        android:id="@+id/btnoften3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#03A9F4"
+        android:text="often"
+        app:layout_constraintBottom_toBottomOf="@+id/btnsometimes3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnsometimes3" />
+
+    <Button
+        android:id="@+id/btnnever3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#03A9F4"
+        android:text="very often"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnrarely3" />
+
+    <Button
+        android:id="@+id/btnvery3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:text="Never"
+        app:layout_constraintBottom_toBottomOf="@+id/btnnever3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toEndOf="@+id/btnnever3"
+        app:layout_constraintTop_toTopOf="@+id/btnnever3" />
+
+    <ImageButton
+        android:id="@+id/btnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnoften3"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

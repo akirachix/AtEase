@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tlhome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserProfile">
+    tools:context=".ui.UserProfile">
 
     <TextView
         android:id="@+id/tvProfile"
@@ -25,8 +26,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
+        android:layout_width="45dp"
+        android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -40,11 +41,12 @@
         android:id="@+id/tlPersonalInfo"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
         app:boxBackgroundColor="#0DFFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -58,9 +60,10 @@
         android:layout_width="0dp"
         android:layout_height="38dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/tlTherapies"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/ic_baseline_wheelchair_pickup_24"
@@ -70,11 +73,12 @@
         android:id="@+id/tlTherapies"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         app:boxBackgroundColor="#0DFFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -98,8 +102,7 @@
         android:id="@+id/tlAboutApp"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         app:boxBackgroundColor="#14FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
@@ -180,3 +183,4 @@
         app:srcCompat="@drawable/ic_baseline_movie_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

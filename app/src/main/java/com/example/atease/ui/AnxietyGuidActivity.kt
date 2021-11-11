@@ -1,11 +1,11 @@
-package com.example.atease
+package com.example.atease.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class UserProfile : AppCompatActivity() {
+class AnxietyGuidActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_profile)
+        setContentView(R.layout.activity_anxiety_guid)
     }
 }
