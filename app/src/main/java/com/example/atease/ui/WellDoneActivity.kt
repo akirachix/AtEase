@@ -1,9 +1,8 @@
-package com.example.atease.ui
+package com.example.atease
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.atease.R
 import kotlinx.android.synthetic.main.activity_well_done.*
 
 class WellDoneActivity : AppCompatActivity() {
@@ -14,7 +13,7 @@ class WellDoneActivity : AppCompatActivity() {
     }
     fun start (){
        btnWelldone. setOnClickListener{
-            val intent=Intent(baseContext, ActivityStartActivity::class.java)
+            val intent=Intent(baseContext, com.example.atease.ui.ActivityStartActivity::class.java)
             startActivity(intent)
         }
     }

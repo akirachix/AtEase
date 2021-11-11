@@ -12,25 +12,26 @@ class choosingAssessmentActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_choosing_assessment2)
 
 
-
 //        var tvAssess: TextView = findViewById(R.id.tvAnxienty)
 //        var tvStress: TextView = findViewById(R.id.tvStres)
 //        var tvTime: TextView = findViewById(R.id.tvTime)
 //        var tvSleep: TextView = findViewById(R.id.tvSleep)
 //        var tvsleep: TextView = findViewById(R.id.tvsleep)
 
-            btnStart.setOnClickListener {
+        btnStart.setOnClickListener {
             var intent = Intent(baseContext, stressScreeningActivity2::class.java)
             startActivity(intent)
         }
         btnanxiety.setOnClickListener {
-            var intent=Intent(baseContext, ActivityAnxiety::class.java)
+            var intent = Intent(baseContext, ActivityAnxiety::class.java)
             startActivity(intent)
         }
         btnDelete.setOnClickListener {
-            var intent=Intent(baseContext, ActivitySleep::class.java)
+            var intent = Intent(baseContext, ActivitySleep::class.java)
             startActivity(intent)
         }
+    }
+}
 
 
 //        btnStart.setOnClickListener {
@@ -42,6 +43,5 @@ class choosingAssessmentActivity2 : AppCompatActivity() {
 //        btnDelete.setOnClickListener {
 //            Toast.makeText(this, "Start Assessment",Toast.LENGTH_LONG ).show()
 //        }
-    }
-}
+
 

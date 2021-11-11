@@ -1,9 +1,8 @@
-package com.example.atease.ui
+package com.example.atease
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.atease.R
 import kotlinx.android.synthetic.main.activity_forgot_password.*
 
 class ActivityForgotPassword : AppCompatActivity() {
@@ -14,11 +13,9 @@ class ActivityForgotPassword : AppCompatActivity() {
 
 
         btnsendrequest.setOnClickListener {
-            val intent = Intent(this, ActivityResetPassword::class.java)
+            val intent = Intent(this, com.example.atease.ui.ActivityResetPassword::class.java)
             startActivity(intent)
         }
-
-
 
     }
 }

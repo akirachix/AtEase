@@ -1,10 +1,9 @@
-package com.example.atease.ui
+package com.example.atease
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
-import com.example.atease.R
 
 class ActivityAnxiety : AppCompatActivity() {
     lateinit var cvExams: CardView
@@ -19,7 +18,7 @@ class ActivityAnxiety : AppCompatActivity() {
     }
     fun viewExams(){
         cvExams.setOnClickListener {
-            var intent= Intent(baseContext, WellDoneActivity::class.java)
+            var intent= Intent(baseContext, com.example.atease.ui.WellDoneActivity::class.java)
             startActivity(intent)
         }
     }

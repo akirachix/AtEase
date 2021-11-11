@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "811137990366",
+    "project_id": "atease-32a40",
+    "storage_bucket": "atease-32a40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811137990366:android:223d256139818e8aa88c4f",
+        "android_client_info": {
+          "package_name": "com.example.atease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811137990366-s9co9p00g1f2hffn0cq1aicm0t4kauhu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.atease",
+            "certificate_hash": "7ea2ca0b0d7cd479d195b282fbad362ca9ae0903"
+          }
+        },
+        {
+          "client_id": "811137990366-9t5fa0ch1bts5e6i8a2glp6i1mv8of6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Z-Kh_X6epBP6poulzMEI1TiEyc55IAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811137990366-9t5fa0ch1bts5e6i8a2glp6i1mv8of6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

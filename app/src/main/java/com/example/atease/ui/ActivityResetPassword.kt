@@ -1,10 +1,9 @@
-package com.example.atease.ui
+package com.example.atease
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.example.atease.R
 import com.example.atease.databinding.ActivityForgotPasswordBinding
 
 class ActivityResetPassword : AppCompatActivity() {
@@ -16,7 +15,7 @@ class ActivityResetPassword : AppCompatActivity() {
         )
 
         binding.btnsendrequest.setOnClickListener {
-            val intent = Intent(this, HomeScreenActivity::class.java)
+            val intent = Intent(this, com.example.atease.ui.HomeScreenActivity::class.java)
             startActivity(intent)
         }
     }

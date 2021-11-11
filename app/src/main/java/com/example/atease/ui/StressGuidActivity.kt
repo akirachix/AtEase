@@ -1,11 +1,11 @@
-package com.example.atease
+package com.example.atease.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Activity_onboarding : AppCompatActivity() {
+class StressGuidActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_onboarding)
+        setContentView(R.layout.activity_stress_guid)
     }
 }

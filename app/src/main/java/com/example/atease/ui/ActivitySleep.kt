@@ -1,10 +1,9 @@
-package com.example.atease.ui
+package com.example.atease
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
-import com.example.atease.R
 
 class ActivitySleep : AppCompatActivity() {
     lateinit var cvExams: CardView

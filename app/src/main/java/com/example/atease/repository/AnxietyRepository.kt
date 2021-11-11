@@ -1,6 +1,5 @@
 package com.example.atease.repository
 
-import com.example.atease.Api.ApiInterface
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

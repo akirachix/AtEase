@@ -1,4 +1,4 @@
-package com.example.atease.models
+package com.example.atease.ui
 
 data class SignupRequest(
     var firstName: String,

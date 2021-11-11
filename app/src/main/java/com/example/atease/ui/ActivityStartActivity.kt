@@ -1,12 +1,10 @@
-package com.example.atease.ui
+package com.example.atease
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.atease.R
 import kotlinx.android.synthetic.main.activity_sleep.*
 import kotlinx.android.synthetic.main.activity_start.*
-import kotlinx.android.synthetic.main.activity_stress_screening2.*
 
 class ActivityStartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +19,7 @@ class ActivityStartActivity : AppCompatActivity() {
 
     fun start (){
         btnProfile. setOnClickListener{
-            val intent= Intent(baseContext, UserProfile::class.java)
+            val intent= Intent(baseContext, com.example.atease.ui.UserProfile::class.java)
             startActivity(intent)
         }
     }
