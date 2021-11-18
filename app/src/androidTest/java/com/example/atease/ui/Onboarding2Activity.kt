@@ -1,9 +1,10 @@
-package com.example.atease
+package com.example.atease.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.atease.R
 
 class Onboarding2Activity : AppCompatActivity() {
     lateinit var btnButton: Button
@@ -18,7 +19,7 @@ class Onboarding2Activity : AppCompatActivity() {
     }
     fun onClickNow(){
         btnButton.setOnClickListener {
-            val next=Intent(baseContext,Onboarding3Activity::class.java)
+            val next=Intent(baseContext, Onboarding3Activity::class.java)
             startActivity(next)
 
         }
